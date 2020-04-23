@@ -1,0 +1,33 @@
+body{
+    padding: 5px;
+    background-color: bisque;
+}
+.imageContainer{
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+    border: 10px cadetblue solid;
+}
+.imageContainer img{
+    animation: kenburns 10s infinite;
+}
+@keyframes kenburns{
+    0%{
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+    }
+    95%{
+        opacity: 1;
+        transform: scale3d(2.5, 2.5, 1.5) translate3d(-160px,20px, 0px);
+        animation-timing-function: ease-in;
+    }
+    100%{
+        opacity: 0;
+        transform: scale3d(2,2,2);
+    }
+}
+h1{
+    color:rgb(69, 125, 230);
+}
