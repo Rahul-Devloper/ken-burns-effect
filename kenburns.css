@@ -7,6 +7,7 @@ body{
     height: 300px;
     overflow: hidden;
     border: 10px cadetblue solid;
+    float: left;
 }
 .imageContainer img:hover{
     animation: kenburns 10s infinite;
@@ -34,4 +35,20 @@ h1{
 }
 h2{
     color:rgb(69, 125, 230);
+}
+.heart{
+    color: red;
+    font-size: 300px;
+    text-align: center;
+    margin-left: 90px;
+    padding-bottom: 50px;
+    float: left;
+}
+.heart:hover{
+    animation: jittery .3s infinite;
+}
+@keyframes jittery{
+10%{
+    transform: translate3d(-2px, -3px, 0px) scale3d(1.01,1.01,0)
+   }
 }
