@@ -52,3 +52,27 @@ h2{
     transform: translate3d(-2px, -3px, 0px) scale3d(1.01,1.01,0)
    }
 }
+.blink{
+    animation: blink .5s infinite;
+    float: left;
+    font-size: 50px;
+    color: brown;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    margin-left: 90px;
+    padding-bottom: 50px;
+}
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    76%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
